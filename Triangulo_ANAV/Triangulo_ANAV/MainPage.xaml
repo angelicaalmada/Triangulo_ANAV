@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Triangulo_ANAV.MainPage">
+
+    <StackLayout Padding="25,25,25,15">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Triangulo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Grid>
+        <Label Grid.Column="0" Grid.Row="0" Text="Base"/>
+        <Entry Grid.Column="1" Grid.Row="0" Placeholder="Base" x:Name="Base" Keyboard="Numeric" />
+
+        <Label Grid.Column="0" Grid.Row="1" Text="Altura"/>
+        <Entry Grid.Column="1" Grid.Row="1" Placeholder="Altura" x:Name="Altura" Keyboard="Numeric" />
+
+         <Label Grid.Column="0" Grid.Row="0" Text="Medida de los lados"/>
+         <Entry Grid.Column="1" Grid.Row="0" Placeholder="lado1" x:Name="lado1" Keyboard="Numeric" />
+         <Entry Grid.Column="0" Grid.Row="1" Placeholder="lado2" x:Name="lado2" Keyboard="Numeric"/>
+        
+        <Button Grid.Column="" Text="Calcular" Clicked="Button_Clicked" />
+        <Image Source="equilatero.png" HeightRequest="100" WidthRequest="100" x:Name="imgequilatero" IsVisible="false"/>
+        <Image Source="escaleno.png" HeightRequest="100" WidthRequest="100" x:Name="imgescaleno" IsVisible="false"/>
+        <Image Source="isoceles.png" HeightRequest="100" WidthRequest="100" x:Name="imgisoceles" IsVisible="false"/>
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
